@@ -14,6 +14,9 @@
 		F79FB7B621F2E64E00626B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79FB7B421F2E64E00626B51 /* LaunchScreen.storyboard */; };
 		F79FB7C121F2E64E00626B51 /* locitedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FB7C021F2E64E00626B51 /* locitedTests.swift */; };
 		F79FB7CC21F2E64E00626B51 /* locitedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FB7CB21F2E64E00626B51 /* locitedUITests.swift */; };
+		F79FB7DE21F32A9800626B51 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FB7DD21F32A9800626B51 /* BaseService.swift */; };
+		F79FB7E021F32AA600626B51 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FB7DF21F32AA600626B51 /* Service.swift */; };
+		F79FB7E321F3323600626B51 /* FriendList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79FB7E221F3323600626B51 /* FriendList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F79FB7C721F2E64E00626B51 /* locitedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locitedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79FB7CB21F2E64E00626B51 /* locitedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locitedUITests.swift; sourceTree = "<group>"; };
 		F79FB7CD21F2E64E00626B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79FB7DD21F32A9800626B51 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		F79FB7DF21F32AA600626B51 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F79FB7E221F3323600626B51 /* FriendList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,10 @@
 		F79FB7AA21F2E64800626B51 /* locited */ = {
 			isa = PBXGroup;
 			children = (
+				F79FB7DC21F32A8300626B51 /* Service */,
+				F79FB7DB21F32A6000626B51 /* Model */,
+				F79FB7DA21F32A5C00626B51 /* View */,
+				F79FB7D921F32A5300626B51 /* Utils */,
 				F79FB7AB21F2E64800626B51 /* AppDelegate.swift */,
 				F79FB7AD21F2E64800626B51 /* ViewController.swift */,
 				F79FB7AF21F2E64800626B51 /* Main.storyboard */,
@@ -123,6 +133,45 @@
 				F79FB7CD21F2E64E00626B51 /* Info.plist */,
 			);
 			path = locitedUITests;
+			sourceTree = "<group>";
+		};
+		F79FB7D921F32A5300626B51 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F79FB7DA21F32A5C00626B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F79FB7E121F3321A00626B51 /* Friend */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F79FB7DB21F32A6000626B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F79FB7DC21F32A8300626B51 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F79FB7DD21F32A9800626B51 /* BaseService.swift */,
+				F79FB7DF21F32AA600626B51 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F79FB7E121F3321A00626B51 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				F79FB7E221F3323600626B51 /* FriendList.storyboard */,
+			);
+			path = Friend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79FB7E321F3323600626B51 /* FriendList.storyboard in Resources */,
 				F79FB7B621F2E64E00626B51 /* LaunchScreen.storyboard in Resources */,
 				F79FB7B321F2E64E00626B51 /* Assets.xcassets in Resources */,
 				F79FB7B121F2E64800626B51 /* Main.storyboard in Resources */,
@@ -257,7 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79FB7AE21F2E64800626B51 /* ViewController.swift in Sources */,
+				F79FB7E021F32AA600626B51 /* Service.swift in Sources */,
 				F79FB7AC21F2E64800626B51 /* AppDelegate.swift in Sources */,
+				F79FB7DE21F32A9800626B51 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
